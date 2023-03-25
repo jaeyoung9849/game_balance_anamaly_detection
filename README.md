@@ -76,5 +76,48 @@
 -----------------------------------
 
 ## :sunny: 모델링
+- **Feature extraction**으로 **공격력, 지구력, 이동력, 득점력, 지원력을 다 더한 all_stat**이라는 **새로운 feature를 생성**하여 비교했습니다.
+- **역할이 같은 캐릭터 내에서 all_stat의 차이가 존재하는지** 분석했습니다.
 
-### 1) 
+![image](https://user-images.githubusercontent.com/56102116/227690610-35048554-be7a-401a-ac83-7a1121cb4a6e.png)
+
+- Speedster와 Supporter의 차이는 작은 데 반해, **All-Rounder와 Attacker와 Defender의 차이가 크게 발생**해 밸런스의 조정이 필요합니다.
+
+<br/>
+
+### 1) All-Rounder 비교
+
+![image](https://user-images.githubusercontent.com/56102116/227698194-63ad71a9-e406-43fb-bb91-fafdc3d88f34.png)
+
+- 같은 근거리 캐릭터인데도 불구하고 능력치의 **총합이 3.5 차이**가 발생하고 있습니다.
+
+<br/>
+
+### 2) Attacker 비교
+
+![image](https://user-images.githubusercontent.com/56102116/227699957-d0eb6d47-bc32-40c2-a193-dd586f3e0f04.png)
+
+- 같은 원거리 캐릭터인데도 불구하고 능력치의 **총합이 3.5 차이**가 발생하고 있습니다.
+
+<br/>
+
+### 3) Defender 비교
+
+![image](https://user-images.githubusercontent.com/56102116/227700088-672c99da-9989-40ce-9078-a073037c8941.png)
+
+- 같은 근거리 캐릭터인데도 불구하고 능력치의 **총합이 3.5 차이**가 발생하고 있습니다.
+
+<br/>
+<br/>
+
+---------------------
+
+## :sunny: 한계점
+
+- **각 능력치를 합산한 값**을 기준으로 이상치를 판단했지만, **유관부서와 고객의 피드백을 종합적으로 판단**하여 더 객관적인 기준을 마련할 필요가 있습니다.
+- 각 캐릭터의 능력치뿐만 아니라 **사용하는 스킬의 강도 등**을 알 수 있다면 더 완성도 높은 밸런스 검증이 가능할 것입니다.
+
+<br/>
+<br/>
+
+
